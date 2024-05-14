@@ -1,15 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" class="logo" src="./assets/reshot.svg">
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <BuildOne/>
+  <BuildTwo/>
+  
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import HelloWorld from './components/HelloWorld.vue'
+import BuildOne from './components/BuildOne.vue'
+import BuildTwo from './components/BuildTwo.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld,
+    BuildOne,
+    BuildTwo
+    
   }
 }
 </script>
@@ -22,5 +30,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.logo{
+  height: 40px;
 }
 </style>
